@@ -1,4 +1,5 @@
 from selenium import webdriver
+import time
 
 
 class Crawler(object):
@@ -56,10 +57,13 @@ class Crawler(object):
 
 
 if __name__ == "__main__":
-    NUM = ''
-    a = Crawler()
-    url_list = a.get_site_list()
-    print(url_list)
-    # url = 'https://licai.p2peye.com/rebate/4289-1-2.html'
-    for url in url_list:
-        a.auto_click(url, NUM)
+    while True:
+        NUM = '18998997909'
+        a = Crawler()
+        url_list = a.get_site_list()
+        print(url_list)
+        # url = 'https://licai.p2peye.com/rebate/4289-1-2.html'
+        for url in url_list:
+            a.auto_click(url, NUM)
+        print('已注册{}个网站'.format(len(url_list)))
+        time.sleep(300)
