@@ -1,3 +1,6 @@
+"""
+Don't Evil
+"""
 from selenium import webdriver
 import time
 

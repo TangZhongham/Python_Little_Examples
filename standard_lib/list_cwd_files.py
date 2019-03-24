@@ -1,3 +1,6 @@
+"""
+列出当前文件夹的所有目录和文件。
+"""
 import os
 import glob
 
